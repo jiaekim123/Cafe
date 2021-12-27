@@ -3,9 +3,18 @@ package oop.example;
 public class MenuItem {
 
     private String name;
-    private Integer price;
+    private int price;
 
-    public MenuItem(String name) {
+    public MenuItem(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }
